@@ -20,7 +20,10 @@ const socials = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Grid bg */}
       <div className="absolute inset-0 tech-grid opacity-30" />
 
@@ -38,14 +41,13 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-primary mb-4 font-mono">
+          <p className="text-sm md:text-base tracking-[0.3em] uppercase text-primary mb-4 font-mono"> 
             Kishore Gurusamy
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Building{" "}
-            <span className="gradient-text">Intelligent Systems</span>
+            Building <span className="gradient-text">AI-Powered Systems</span>
             <br />
-            with React Native & AI
+            across Mobile, Web
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             Mobile. Computer Vision. Full Stack. Production Ready.
@@ -58,12 +60,23 @@ export default function Hero() {
             >
               View Projects
             </a>
-            <a
-              href="#"
-              className="glass-card gradient-border px-8 py-3.5 rounded-lg font-semibold text-foreground hover:bg-muted/50 transition-colors"
-            >
-              Download Resume
-            </a>
+            <div className="flex gap-4">
+              <a
+                href="/resume/Kishore_Resume_SinglePage.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card gradient-border px-6 py-3.5 rounded-lg font-semibold text-foreground hover:bg-muted/50 transition-colors"
+              >
+                View Resume
+              </a>
+              <a
+                href="/resume/Kishore_Resume_SinglePage.pdf"
+                download="Kishore_Resume.pdf"
+                className="gradient-bg px-6 py-3.5 rounded-lg font-semibold text-primary-foreground hover:opacity-90 transition-opacity"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
 
           <div className="flex items-center justify-center gap-5">
@@ -88,7 +101,10 @@ export default function Hero() {
           transition={{ delay: 1.5 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2"
         >
-          <a href="#about" className="text-muted-foreground animate-float inline-block">
+          <a
+            href="#about"
+            className="text-muted-foreground animate-float inline-block"
+          >
             <ArrowDown size={24} />
           </a>
         </motion.div>

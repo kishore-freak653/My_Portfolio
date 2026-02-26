@@ -3,43 +3,67 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "AI-Based Door & Window Inspection App",
+    title: "AI-Based Window Inspection System",
     description:
-      "Real-time AI-powered quality inspection system using YOLO object detection and OpenCV metrics for manufacturing quality control.",
-    tags: ["React Native", "Kotlin", "YOLOv5 ONNX", "OpenCV", "CameraX"],
+      "Production-grade computer vision system for automated defect detection using YOLO ONNX and OpenCV with real-time mobile inference.",
+    tags: ["React Native", "Python", "OpenCV", "YOLO ONNX", "Android"],
     features: [
-      "Squareness, Sharpness, Tilt analysis",
-      "Sealant Coverage detection",
-      "Visual Damage assessment",
-      "Live bounding box overlay",
+      "Real-time camera detection pipeline",
+      "Sealant gap & visual damage detection",
+      "Tilt, squareness & sharpness analysis",
+      "Mobile inference using ONNX runtime",
     ],
     gradient: "from-neon-blue/20 to-neon-purple/20",
+    github: "https://github.com/your-link",
+    live: "#",
   },
+
+  {
+    title: "MediCompanion — Medication Tracking App",
+    description:
+      "Full-stack healthcare tracking platform with dual-role system, real-time alerts, and secure Supabase authentication.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
+    features: [
+      "Patient & caretaker role system",
+      "Missed-dose detection engine",
+      "Automated caretaker email alerts",
+      "Secure auth + input validation",
+    ],
+    gradient: "from-neon-purple/20 to-neon-blue/20",
+    github: "https://github.com/your-link",
+    live: "https://medcompanion1.netlify.app",
+  },
+
+  {
+    title: "Matrimony Web Platform",
+    description:
+      "Full-stack matchmaking platform with real-time dashboards, profile verification, and Firebase-based secure authentication.",
+    tags: ["React", "Firebase", "Firestore", "Node.js"],
+    features: [
+      "User onboarding & profile system",
+      "Match suggestion engine",
+      "Admin dashboards",
+      "Real-time Firestore data handling",
+    ],
+    gradient: "from-neon-blue/20 to-neon-purple/10",
+    github: "https://github.com/your-link",
+    live: "#",
+  },
+
   {
     title: "Timesheet Management System",
     description:
-      "Full-stack MERN application for employee time tracking with admin approval workflows and real-time notifications.",
+      "Enterprise MERN platform for employee tracking, admin approvals, and workflow automation.",
     tags: ["React", "Node.js", "MongoDB", "Express", "Redux"],
     features: [
       "Employee punch in/out",
       "Admin approval workflow",
-      "Calendar review UI",
-      "Notifications system",
+      "Calendar review interface",
+      "Notification system",
     ],
     gradient: "from-neon-purple/20 to-neon-blue/20",
-  },
-  {
-    title: "Cricket Analytics Platform",
-    description:
-      "Data-driven cricket analytics dashboard with historical dataset analysis and performance insights.",
-    tags: ["React", "React Query", "Data Analytics", "TypeScript"],
-    features: [
-      "Top run scorer metrics",
-      "Strike rate analysis",
-      "Impact scoring",
-      "Historical data exploration",
-    ],
-    gradient: "from-neon-blue/20 to-neon-purple/10",
+    github: "https://github.com/your-link",
+    live: "#",
   },
 ];
 

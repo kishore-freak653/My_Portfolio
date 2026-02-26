@@ -3,10 +3,9 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  { name: "React Native / Mobile", pct: 95 },
-  { name: "AI & Computer Vision", pct: 88 },
-  { name: "Full Stack (MERN)", pct: 85 },
-  { name: "TypeScript", pct: 90 },
+  { name: "React Native / Mobile", pct: 85 },
+  { name: "AI & Computer Vision", pct: 50 },
+  { name: "Full Stack ", pct: 95 },
   { name: "Performance & Architecture", pct: 87 },
 ];
 
@@ -47,19 +46,26 @@ export default function About() {
           className="grid md:grid-cols-2 gap-16 items-center"
         >
           <div>
-            <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">About Me</p>
+            <p className="text-primary font-mono text-sm tracking-widest uppercase mb-3">
+              About Me
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Crafting <span className="gradient-text">AI-Powered</span> Mobile Experiences
+              Crafting <span className="gradient-text">AI-Powered</span> Mobile
+              Experiences
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I am a React Native and Android-focused developer specializing in AI-powered mobile applications.
+                I am a Full-Stack and React Native developer specializing in
+                AI-powered mobile and web applications.
               </p>
               <p>
-                I build production-ready apps integrating YOLO ONNX, OpenCV, real-time camera pipelines, and quality inspection systems.
+                I build production-ready systems integrating YOLO ONNX, OpenCV,
+                real-time camera pipelines, and SaaS architectures across mobile
+                and cloud environments.
               </p>
               <p>
-                Strong in performance optimization, detection pipelines, and scalable architecture.
+                Strong in mobile inference, performance optimization, full-stack
+                development, and deploying scalable AI-driven applications.
               </p>
             </div>
           </div>
