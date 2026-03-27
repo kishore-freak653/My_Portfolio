@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
-    year: "Mar 2025 – Present",
-    title: "Full Stack Developer — Zoryboard Software Solutions",
+    year: "Mar 2025 - Present",
+    title: "Full Stack Developer - Zoryboard Software Solutions",
     desc: "Developing AI-based Window Analyzer using React Native, Python, OpenCV, and ONNX for automated defect detection and mobile inference.",
   },
   {
@@ -17,8 +17,8 @@ const milestones = [
     desc: "Built matrimony platform with user onboarding, profile systems, and matchmaking logic using React, Firebase, and Node.js.",
   },
   {
-    year: "Oct 2024 – Jan 2025",
-    title: "Full Stack Developer Intern — Brillium Tech Solutions",
+    year: "Oct 2024 - Jan 2025",
+    title: "Full Stack Developer Intern - Brillium Tech Solutions",
     desc: "Developed responsive React.js components for enterprise applications and improved performance across UI modules.",
   },
 ];
@@ -41,7 +41,6 @@ export default function Experience() {
         </motion.div>
 
         <div className="relative max-w-2xl mx-auto">
-          {/* Timeline line */}
           <div className="absolute left-[19px] md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/50 via-accent/50 to-primary/20" />
 
           {milestones.map((m, idx) => (
@@ -55,11 +54,13 @@ export default function Experience() {
                 idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
               }`}
             >
-              {/* Dot */}
               <div className="absolute left-[15px] md:left-1/2 md:-translate-x-1/2 top-1.5 w-[9px] h-[9px] rounded-full gradient-bg z-10 ring-4 ring-background" />
 
-              {/* Content */}
-              <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${idx % 2 === 0 ? "md:text-right md:pr-8" : "md:text-left md:pl-8 md:ml-auto"}`}>
+              <div
+                className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${
+                  idx % 2 === 0 ? "md:text-right md:pr-8" : "md:text-left md:pl-8 md:ml-auto"
+                }`}
+              >
                 <span className="text-primary font-mono text-xs">{m.year}</span>
                 <h3 className="text-lg font-semibold text-foreground mt-1">{m.title}</h3>
                 <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">{m.desc}</p>

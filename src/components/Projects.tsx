@@ -17,9 +17,8 @@ const projects = [
     github: "https://github.com/your-link",
     live: "#",
   },
-
   {
-    title: "MediCompanion — Medication Tracking App",
+    title: "MediCompanion - Medication Tracking App",
     description:
       "Full-stack healthcare tracking platform with dual-role system, real-time alerts, and secure Supabase authentication.",
     tags: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
@@ -33,7 +32,38 @@ const projects = [
     github: "https://github.com/your-link",
     live: "https://medcompanion1.netlify.app",
   },
-
+  {
+    title: "PERN Taxi Booking System",
+    description:
+      "Full-stack taxi booking platform with real-time ride management, authentication, and RESTful APIs built using PostgreSQL, Express, React, and Node.js.",
+    tags: ["React", "Node.js", "PostgreSQL", "Express", "Prisma"],
+    features: [
+      "User & driver authentication system",
+      "Ride booking with pickup & drop locations",
+      "REST API with Prisma ORM",
+      "JWT-based secure login",
+      "Backend deployed on Railway",
+    ],
+    gradient: "from-neon-blue/20 to-neon-purple/20",
+    github: "https://github.com/kishore-freak653/Taxi_Booking",
+    live: "https://taxi-booking-sable.vercel.app/",
+  },
+  {
+    title: "NutriScan - AI Food & Nutrition Tracker",
+    description:
+      "AI-powered mobile application for food detection and nutrition analysis using Google Gemini Vision API with real-time tracking.",
+    tags: ["React Native", "Node.js", "MongoDB", "Gemini AI", "JWT"],
+    features: [
+      "AI-based food detection using Gemini Vision API",
+      "Real-time nutrition calculation (calories, protein, fat, carbs)",
+      "User food history tracking",
+      "JWT authentication system",
+      "Mobile-first UI with React Native",
+    ],
+    gradient: "from-neon-purple/20 to-neon-blue/20",
+    github: "https://github.com/kishore-freak653/NutriScanner_App",
+    live: "https://drive.google.com/file/d/1Y3JLpVZDRPggyHFba1ZPGHVrXQjWTQwl/view?usp=drivesdk",
+  },
   {
     title: "Matrimony Web Platform",
     description:
@@ -47,9 +77,8 @@ const projects = [
     ],
     gradient: "from-neon-blue/20 to-neon-purple/10",
     github: "https://github.com/your-link",
-    live: "#",
+    live: "https://srisathyasaidevoteesmatrimony.com/",
   },
-
   {
     title: "Timesheet Management System",
     description:
@@ -64,6 +93,22 @@ const projects = [
     gradient: "from-neon-purple/20 to-neon-blue/20",
     github: "https://github.com/your-link",
     live: "#",
+  },
+  {
+    title: "HealthTracker - Personal Health Monitoring App",
+    description:
+      "Full-stack health tracking platform for monitoring daily activities, nutrition, and wellness with secure authentication and real-time data handling.",
+    tags: ["React", "Node.js", "MongoDB", "Express", "JWT"],
+    features: [
+      "User authentication with JWT",
+      "Daily health & activity tracking",
+      "Nutrition and wellness monitoring",
+      "Responsive dashboard UI",
+      "Full-stack MERN architecture",
+    ],
+    gradient: "from-neon-green/20 to-neon-blue/20",
+    github: "https://github.com/kishore-freak653/Health-Tracker-Web",
+    live: "https://healthtrackerw.netlify.app/login",
   },
 ];
 
@@ -96,7 +141,6 @@ export default function Projects() {
               style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
               className="glass-card gradient-border rounded-2xl overflow-hidden group"
             >
-              {/* Top gradient strip */}
               <div className={`h-1 w-full bg-gradient-to-r ${p.gradient}`} />
 
               <div className="p-7">
@@ -127,16 +171,16 @@ export default function Projects() {
 
                 <div className="flex items-center gap-3">
                   <a
-                    href="#"
+                    href={p.live}
                     className="flex items-center gap-1.5 text-sm text-primary hover:underline"
                   >
                     <ExternalLink size={14} /> Live Demo
                   </a>
                   <a
-                    href="#"
+                    href={p.github}
                     className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    <Github size={14} /> Co
+                    <Github size={14} /> Code
                   </a>
                 </div>
               </div>
